@@ -1,0 +1,103 @@
+#container {
+    margin: 0 auto;
+    width: 100%;
+    background: #fff;
+}
+
+#header {
+    background: #ccc;
+    padding: 20px 20px 100px 100px;
+}
+
+#header h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+    margin: 0;
+}
+
+#navigation {
+    float: left;
+    width: 100%;
+    background: #555;
+}
+
+#navigation ul {
+    margin: 0;
+    width: 100%;
+    padding-left: 0;
+}
+
+#navigation ul li {
+    font-family: 'Source Sans Pro', sans-serif;
+    list-style-type: none;
+    display: inline;
+}
+
+#navigation li a {
+    display: block;
+    float: left;
+    width: 125px;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    border-right: 1px solid #fff;
+}
+
+#navigation li a:hover {
+    background: cornflowerblue;
+}
+
+#content-container {
+    float: left;
+    width: 100%;
+    background: #FFF url(layout-two-liquid-background.gif) repeat-y 68% 0;
+}
+
+.content {
+    font-family: 'Merriweather', serif;
+    color: #555;
+    clear: left;
+    float: left;
+    width: 40%;
+    padding: 20px 0;
+    margin-left: 10%;
+    margin-right: 20%;
+    display: inline;
+}
+
+#home h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-variant: small-caps;
+    margin: 0;
+}
+
+#aside {
+    color: #555;
+    float: right;
+    width: 26%;
+    padding: 20px 0;
+    margin: 0 3% 2% 0%;
+    display: inline;
+}
+
+#aside img {
+    margin: 10px;
+}
+
+#aside p {
+    display: block;
+}
+
+#footer {
+    position: static;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-right: 32%;
+    clear: left;
+    background: #ccc;
+    text-align: right;
+    padding: 20px;  
+    height: 1%;
+}
