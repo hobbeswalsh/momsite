@@ -6,7 +6,7 @@
 
 #header {
     background: #ccc;
-    padding: 20px 20px 100px 100px;
+    padding: 20px;
 }
 
 #header h1 {
@@ -55,6 +55,7 @@
 }
 
 .content {
+    min-height: 300px;
     font-family: 'Merriweather', serif;
     color: #555;
     clear: left;
