@@ -1,1 +1,1 @@
-web:gunicorn momsite:app --log-file -
+web: gunicorn momsite:app --log-file -
