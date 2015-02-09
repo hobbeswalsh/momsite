@@ -1,60 +1,65 @@
 <html ng-app="counseling">
 <head>
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu|Merriweather'
-          rel='stylesheet' type='text/css'>
-    <link rel="stylesheet"
-          href={{ url_for('static', filename='momsite.css') }}>
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:600'
-          rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu|Merriweather'
+        rel='stylesheet' type='text/css'>
+  <link rel="stylesheet"
+        href={{ url_for('static', filename='momsite.css') }}>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:600'
+        rel='stylesheet' type='text/css'>
 </head>
 <body>
 <div id="container" ng-controller="mainCtrl">
-    <div id="header">
-        <h1>
-            Annie Walsh Counseling
-        </h1>
+
+
+  <div id="navigation">
+    <ul>
+      <li ng-class="{aboutbackground: template == 'about', about: true}">
+        <a href="" ng-click="showMain()">about me</a></li>
+
+      <li ng-class="{resumebackground: template == 'resume', resume: true}">
+        <a href="" ng-click="showResume()">résumé</a></li>
+
+      <li ng-class="{testimonialsbackground: template == 'testimonials', testimonials: true}">
+        <a href="#" ng-click="showTestimonials()">testimonials</a></li>
+
+      <li ng-class="{contactbackground: template == 'contact', contact: true}">
+        <a href="#" ng-click="showContact()">contact</a></li>
+    </ul>
+  </div>
+
+
+  <div id="header">
+    <h1>
+      Annie Walsh Counseling
+    </h1>
+  </div>
+
+  <div id="content-container">
+    <div ng-include="template">
+
     </div>
-    <div id="navigation">
-        <ul>
-            <li><a href="" ng-click="showMain()">about me</a></li>
-            <li><a href="" ng-click="showResume()">résumé</a></li>
-            <li><a href="#" ng-click="showTestimonials()">testimonials</a></li>
-            <li><a href="#" ng-click="showContact()">contact</a></li>
-        </ul>
+    <div id="aside">
+
+      <img src="{{ url_for('static', filename='profile.jpg') }}"
+           alt="Profile" width="200px"/>
+
+      <div>
+        <p>
+          For an extra fee, Annie will counsel your Labradoodle.
+        </p>
+      </div>
+
     </div>
-    <div id="content-container">
-        <div class="content" id="home">
-            {% raw %}
-            <h2>
-                {{ header }}
-            </h2>
-            <p ng-repeat="paragraph in content">
-                {{ paragraph }}
-            </p>
-            {% endraw %}
-        </div>
-        <div id="aside">
-
-            <img src="{{ url_for('static', filename='profile.jpg') }}"
-                 alt="Profile" width="200px"/>
-
-            <div>
-                <p>
-                    For an extra fee, Annie will counsel your Labradoodle.
-                </p>
-            </div>
-
-        </div>
 
 
-        <div id="footer">
-            Copyright © Site name, 20XX
-        </div>
+    <div id="footer">
+      Copyright © Site name, 20XX
     </div>
+  </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
 <script src={{ url_for(
-'static', filename='javascript/fuck.js') }}></script>
+'static', filename='javascript/arwcounseling.js') }}></script>
 
 </body>
 

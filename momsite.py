@@ -10,9 +10,9 @@ def hello_world():
     return render_template("index.html")
 
 
-@app.route('/api/v1/main')
+@app.route('/about')
 def get_main():
-    return jsonify(constants.about_me)
+    return render_template("about.html")
 
 
 @app.route('/api/v1/resume')
@@ -20,14 +20,14 @@ def get_resume():
     return jsonify(constants.resume)
 
 
-@app.route('/api/v1/testimonials')
+@app.route('/testimonials')
 def get_testimonials():
-    return jsonify(constants.testimonials)
+    return render_template('testimonials.html')
 
 
-@app.route('/api/v1/contact')
+@app.route('/contact')
 def get_contact_info():
-    return jsonify(constants.contact_info)
+    return render_template('contact.html')
 
 
 if __name__ == '__main__':

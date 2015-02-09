@@ -5,47 +5,97 @@
 }
 
 #header {
-    background: #ccc;
+    background: #ffffff;
     padding: 20px;
 }
 
 #header h1 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
+    margin-top: 40px;
+
     font-size: 3em;
-    margin: 0;
+    padding-top: 10px;
 }
 
 #navigation {
     float: left;
+    height: 30px;
     width: 100%;
     background: #555;
 }
 
 #navigation ul {
+    height: 30px;
     margin: 0;
     width: 100%;
     padding-left: 0;
 }
 
 #navigation ul li {
+    height: 30px;
     font-family: 'Source Sans Pro', sans-serif;
     list-style-type: none;
     display: inline;
 }
 
 #navigation li a {
+    height: 30px;
     display: block;
     float: left;
     width: 125px;
-    padding: 5px 10px;
+    padding: 4px 20px 4px 20px;
     color: #fff;
     text-decoration: none;
     border-right: 1px solid #fff;
 }
 
-#navigation li a:hover {
-    background: cornflowerblue;
+#navigation li.about a:hover {
+    background: #7F1637;
+}
+
+#navigation li.aboutbackground a {
+    background: #7F1637;
+}
+
+.about {
+    color: #7F1637;
+}
+
+#navigation li.resume a:hover {
+    background: #FFB733;
+}
+
+#navigation li.resumebackground a {
+    background: #FFB733;
+}
+
+.resume {
+    color: #FFB733;
+}
+
+#navigation li.testimonials a:hover {
+    background: #047878;
+}
+
+#navigation li.testimonialsbackground a {
+    background-color: #047878;
+}
+
+.testimonials {
+    color: #047878;
+}
+
+#navigation li.contact a:hover {
+    background: #C22121;
+}
+
+#navigation li.contactbackground a {
+    background: #C22121;
+}
+
+.contact {
+    color: #C22121;
 }
 
 #content-container {
@@ -60,10 +110,10 @@
     color: #555;
     clear: left;
     float: left;
-    width: 40%;
+    width: 50%;
     padding: 20px 0;
     margin-left: 10%;
-    margin-right: 20%;
+    margin-right: 10%;
     display: inline;
 }
 
@@ -99,6 +149,6 @@
     clear: left;
     background: #ccc;
     text-align: right;
-    padding: 20px;  
+    padding: 20px;
     height: 1%;
 }
