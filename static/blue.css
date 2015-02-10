@@ -1,0 +1,169 @@
+#container {
+    margin: 0 auto;
+    width: 100%;
+    background: #9497ff;
+}
+
+#header {
+    background: #578cff;
+    padding: 20px;
+}
+
+#header h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    margin-top: 40px;
+
+    font-size: 3em;
+    padding-top: 10px;
+}
+
+#navigation {
+    float: left;
+    height: 50px;
+    width: 100%;
+    background: #7192ff;
+}
+
+#navigation ul {
+    height: 50px;
+    margin: 0;
+    width: 100%;
+    padding-left: 0;
+}
+
+#navigation ul li {
+    height: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+    list-style-type: none;
+    display: inline;
+}
+
+#navigation li a {
+    height: 35px;
+    display: block;
+    float: left;
+    width: 125px;
+    padding: 15px 20px 0 35px;
+    color: #335fff;
+    text-decoration: none;
+    border-right: 1px solid #150aff;
+}
+
+#navigation li.about a:hover {
+    background: #3e1f7f;
+}
+
+#navigation li.aboutbackground a {
+    background: #3e3d7f;
+}
+
+.about {
+    color: #352a7f;
+}
+
+#navigation li.resume a:hover {
+    background: #58dfff;
+}
+
+#navigation li.resumebackground a {
+    background: #8bbfff;
+}
+
+.resume {
+    color: #4600ff;
+}
+
+#navigation li.testimonials a:hover {
+    background: #2d3978;
+}
+
+#navigation li.testimonialsbackground a {
+    background-color: #2d2678;
+}
+
+.testimonials {
+    color: #1c0b78;
+}
+
+#navigation li.contact a:hover {
+    background: #5776c2;
+}
+
+#navigation li.contactbackground a {
+    background: #4655c2;
+}
+
+.contact {
+    color: #4386c2;
+}
+
+#content-container {
+    float: left;
+    width: 100%;
+    /*background: #FFF url(layout-two-liquid-background.gif) repeat-y 68% 5%;*/
+}
+
+.content {
+    min-height: 300px;
+    font-family: 'Merriweather', serif;
+    color: #090655;
+    clear: left;
+    float: left;
+    min-width: 200px;
+    width: 50%;
+    padding: 20px 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: inline;
+}
+
+#home h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-variant: small-caps;
+    margin: 0;
+}
+
+#aside {
+    background-color: #6cd6ee;
+    color: #555;
+    float: right;
+    width: 275px;
+    height: 400px;
+    padding: 10px 0 0 10px;
+    margin: -100px 1% 1% 0;
+    display: inline;
+}
+
+#aside img {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#aside p {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: block;
+}
+
+#footer {
+    position: static;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    margin-left: 2%;
+    width: 30%;
+    clear: left;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: lighter;
+    font-size: 10px;
+    background: #6d6cee;
+    text-align: left;
+    padding: 5px;
+    height: 12px;
+}
+
+dd {
+    display: list-item;
+    list-style-type: disc;
+}
