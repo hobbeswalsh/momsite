@@ -101,7 +101,6 @@
 #content-container {
     float: left;
     width: 100%;
-    /*background: #FFF url(layout-two-liquid-background.gif) repeat-y 68% 5%;*/
 }
 
 .content {
@@ -143,6 +142,9 @@
 #aside p {
     margin-left: 5px;
     margin-right: 5px;
+    color: #090655;
+
+    font-family: 'Merriweather', serif;
     display: block;
 }
 
