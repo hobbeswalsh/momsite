@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template
+from flask import Flask, render_template, redirect, url_for
 
 import constants
 
@@ -6,18 +6,22 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def hello_world():
-    return render_template("index.html")
+def index():
+    return render_template("index.html", caption=constants.get_caption())
 
+@app.route('/favicon.ico')
+def favicon():
+    return redirect(url_for('static', filename='favicon.ico'))
 
 @app.route('/about')
 def get_main():
     return render_template("about.html")
 
 
-@app.route('/api/v1/resume')
+@app.route('/resume')
 def get_resume():
-    return jsonify(constants.resume)
+    return render_template("resume.html")
+
 
 
 @app.route('/testimonials')

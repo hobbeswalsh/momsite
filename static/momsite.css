@@ -20,31 +20,31 @@
 
 #navigation {
     float: left;
-    height: 30px;
+    height: 50px;
     width: 100%;
     background: #555;
 }
 
 #navigation ul {
-    height: 30px;
+    height: 50px;
     margin: 0;
     width: 100%;
     padding-left: 0;
 }
 
 #navigation ul li {
-    height: 30px;
+    height: 50px;
     font-family: 'Source Sans Pro', sans-serif;
     list-style-type: none;
     display: inline;
 }
 
 #navigation li a {
-    height: 30px;
+    height: 35px;
     display: block;
     float: left;
     width: 125px;
-    padding: 4px 20px 4px 20px;
+    padding: 15px 20px 0 35px;
     color: #fff;
     text-decoration: none;
     border-right: 1px solid #fff;
@@ -101,7 +101,7 @@
 #content-container {
     float: left;
     width: 100%;
-    background: #FFF url(layout-two-liquid-background.gif) repeat-y 68% 0;
+    /*background: #FFF url(layout-two-liquid-background.gif) repeat-y 68% 5%;*/
 }
 
 .content {
@@ -110,6 +110,7 @@
     color: #555;
     clear: left;
     float: left;
+    min-width: 200px;
     width: 50%;
     padding: 20px 0;
     margin-left: 10%;
@@ -124,31 +125,45 @@
 }
 
 #aside {
+    background-color: #eee;
     color: #555;
     float: right;
-    width: 26%;
-    padding: 20px 0;
-    margin: 0 3% 2% 0%;
+    width: 275px;
+    height: 400px;
+    padding: 10px 0 0 10px;
+    margin: -100px 1% 1% 0;
     display: inline;
 }
 
 #aside img {
-    margin: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #aside p {
+    margin-left: 5px;
+    margin-right: 5px;
     display: block;
 }
 
 #footer {
     position: static;
-    bottom: 0;
+    bottom: 5%;
     left: 0;
     right: 0;
-    margin-right: 32%;
+    margin-left: 2%;
+    width: 30%;
     clear: left;
-    background: #ccc;
-    text-align: right;
-    padding: 20px;
-    height: 1%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: lighter;
+    font-size: 10px;
+    background: #eee;
+    text-align: left;
+    padding: 5px;
+    height: 12px;
+}
+
+dd {
+    display: list-item;
+    list-style-type: disc;
 }
